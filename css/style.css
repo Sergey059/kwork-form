@@ -709,7 +709,8 @@ img {
   top: 3px;
 }
 
-.form__item.error .form__input {
+.form__item.error .form__email,
+.form__item.error .form__password {
   border-color: #cb2424;
 }
 
