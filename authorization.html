@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <title>Login</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container"><a class="logo header__logo" href="/">Logo</a><a class="header__login" href="authorization.html">Вход / Регистрация</a>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container content__container">
+        <div class="forms">
+          <div class="forms__btns">
+            <button class="forms__checker" data-tab="#form-1">Зарегистрироваться</button>
+            <button class="forms__checker active" data-tab="#form-2">Авторизоваться</button>
+          </div>
+          <form class="form active" novalidate id="form-1">
+            <h2 class="form__title">Регистрация</h2>
+            <div class="form__item">
+              <label class="form__label">Email</label>
+              <input class="form__email" type="email" name="email" placeholder="Введите e-mail"><span class="form__error"></span>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Пароль</label>
+              <input class="form__password" type="password" name="password" placeholder="Введите пароль"><span class="form__error"></span>
+            </div>
+            <label class="form__item form__item--check">
+              <input class="form__checkbox" type="checkbox" name="checkbox">
+              <svg class="icon form__icon">
+                <use xlink:href="../images/svg-sprite.svg#checket"></use>
+              </svg><span class="form__text">Я согласен получать обновления на почту</span><span class="form__error"></span>
+            </label>
+            <button class="form__btn">Регистрация</button>
+          </form>
+          <form class="form" novalidate id="form-2">
+            <h2 class="form__title">Вход</h2>
+            <div class="form__item">
+              <label class="form__label">Email</label>
+              <input class="form__email" type="email" name="email" placeholder="Введите e-mail"><span class="form__error"></span>
+            </div>
+            <div class="form__item">
+              <label class="form__label">Пароль</label>
+              <input class="form__password" type="password" name="password" placeholder="Введите пароль"><span class="form__error"></span>
+            </div>
+            <label class="form__item form__item--check">
+              <input class="form__checkbox" type="checkbox" name="checkbox">
+              <svg class="icon form__icon">
+                <use xlink:href="../images/svg-sprite.svg#checket"></use>
+              </svg><span class="form__text">Я согласен с <a class="form__link" href="#">Правилами пользования приложением</a></span><span class="form__error"></span>
+            </label>
+            <button class="form__btn">Войти</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copy">© 2023</p>
+      </div>
+    </footer>
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>
